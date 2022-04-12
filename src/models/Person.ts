@@ -1,7 +1,16 @@
 export default class Person {
-  name: String;
+  name: string;
 
-  constructor(person : Partial<Person>) {
-    this.name = person.name ? person.name : '';
+  imageUrl: string = '';
+
+  birth_year: string = '';
+
+  homeworld: string = '';
+
+  constructor(person : Partial<Person> | undefined = undefined) {
+    this.name = person?.name || '';
+    this.imageUrl = person?.imageUrl || '';
+    this.birth_year = person?.birth_year || '';
+    this.homeworld = person?.homeworld || '';
   }
 }
