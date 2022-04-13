@@ -1,13 +1,15 @@
-/* eslint-disable no-unreachable */
 import React from 'react';
+
+/* eslint-disable no-unreachable */
+import { Flex } from '@chakra-ui/react';
 
 import { ItemList, PersonDetails } from '../../components';
 
 const PeopleContainer = () => (
-  <div>
+  <Flex>
     <ItemList />
     <PersonDetails />
-  </div>
+  </Flex>
 );
 
 export default PeopleContainer;

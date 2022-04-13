@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 
 import {
   Header,
@@ -9,11 +9,11 @@ import {
 import { PeopleContainer } from '../../containers';
 
 const MainPage: FC = () => (
-  <ChakraProvider>
+  <Container maxW="container.md">
     <Header />
     <RandomPlanet />
     <PeopleContainer />
-  </ChakraProvider>
+  </Container>
 );
 
 export default MainPage;

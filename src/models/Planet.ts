@@ -19,7 +19,7 @@ export default class Planet {
 
   constructor(planet : Partial<Planet> | undefined | null) {
     this.name = planet?.name || '';
-    this.diameter = planet?.name || '';
+    this.diameter = planet?.diameter || '';
     this.rotation_period = planet?.rotation_period || '';
     this.orbital_period = planet?.orbital_period || '';
     this.gravity = planet?.gravity || '';
