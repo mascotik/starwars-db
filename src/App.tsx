@@ -1,6 +1,4 @@
-/* eslint-disable import/extensions */
-
-import './App.css';
+import './App.scss';
 
 import React, { FC } from 'react';
 
