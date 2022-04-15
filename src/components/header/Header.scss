@@ -1,7 +1,6 @@
 .header {
   @apply
    bg-gray-800
-  mx-20
   my-2
   flex
   justify-end
@@ -12,9 +11,14 @@
   @apply
   mx-3
   p-3
-  capitalize
   hover:bg-gray-700
   hover:text-gray-300
   text-gray-400
+  
+}
+
+.focus {
+  @apply 
+  border-b
 }
 

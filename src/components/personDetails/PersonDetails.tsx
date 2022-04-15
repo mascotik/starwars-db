@@ -1,5 +1,5 @@
 /* eslint-disable import/order */
-import './PersonDetails.css';
+import './PersonDetails.scss';
 
 import React, { FC, useEffect, useState } from 'react';
 
@@ -22,7 +22,7 @@ const PersonDetails: FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="detail-container">
       {person.name}
     </div>
   );

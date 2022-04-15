@@ -1,4 +1,4 @@
-import './RandomPlanet.css';
+import './RandomPlanet.scss';
 
 import React, { useEffect, useState } from 'react';
 
@@ -35,12 +35,14 @@ export const RandomPlanet: React.FC = () => {
   };
 
   return (
-    <div>
-      Random
-      {' '}
-      {planet.name}
-      {renderListItems(planet)}
-    </div>
+    <section className="random_caonatier">
+      <figure>
+        Random
+        {' '}
+        {planet.name}
+        {renderListItems(planet)}
+      </figure>
+    </section>
 
   );
 };
